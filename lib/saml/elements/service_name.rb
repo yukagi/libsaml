@@ -1,6 +1,7 @@
 module Saml
   module Elements
     class ServiceName
+      include Saml::ComplexTypes::LocalizedNameType
       include Saml::Base
 
       tag "ServiceName"
